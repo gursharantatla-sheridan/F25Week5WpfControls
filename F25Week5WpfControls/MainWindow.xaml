@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:F25Week5WpfControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas>
+        <Grid Height="77" Width="142" Canvas.Left="51" Canvas.Top="48" Background="#FFCFF3E4">
+            <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+    </Canvas>
 </Window>
