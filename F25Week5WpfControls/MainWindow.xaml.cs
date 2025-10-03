@@ -36,5 +36,21 @@ namespace F25Week5WpfControls
 
             lblOutput.Content = hobbies;
         }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            string gender = "";
+
+            if (rdoFemale.IsChecked == true)
+                gender = rdoFemale.Content.ToString();
+            else if (rdoMale.IsChecked == true)
+                gender = rdoMale.Content.ToString();
+            else if (rdoOther.IsChecked == true)
+                gender = rdoOther.Content.ToString();
+            else
+                gender = "Please select your gender";
+
+            lblOutput.Content = gender;
+        }
     }
 }
