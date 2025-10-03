@@ -52,5 +52,22 @@ namespace F25Week5WpfControls
 
             lblOutput.Content = gender;
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbCities.SelectedIndex > 0)
+                lblOutput.Content = cmbCities.Text;
+            else
+                lblOutput.Content = "Please select your city";
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbCities.SelectedIndex > 0)
+                //lblOutput.Content = cmbCities.Text;
+                lblOutput.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
+            else
+                lblOutput.Content = "Please select your city";
+        }
     }
 }
