@@ -38,5 +38,12 @@
             <ComboBoxItem Content="Tokyo"/>
         </ComboBox>
         <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="599" Canvas.Top="53" Click="btnGetCity_Click"/>
+        <ListBox x:Name="lstCars" Height="186" Width="122" Canvas.Left="400" Canvas.Top="115" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionChanged="lstCars_SelectionChanged" SelectionMode="Extended">
+            <ListBoxItem Content="Honda"/>
+            <ListBoxItem Content="Toyota"/>
+            <ListBoxItem Content="Ford"/>
+            <ListBoxItem Content="Kia"/>
+            <ListBoxItem Content="Nissan"/>
+        </ListBox>
     </Canvas>
 </Window>

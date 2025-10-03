@@ -69,5 +69,13 @@ namespace F25Week5WpfControls
             else
                 lblOutput.Content = "Please select your city";
         }
+
+        private void lstCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lstCars.SelectedItem != null)
+            {
+                lblOutput.Content = (lstCars.SelectedItem as ListBoxItem).Content;
+            }
+        }
     }
 }
