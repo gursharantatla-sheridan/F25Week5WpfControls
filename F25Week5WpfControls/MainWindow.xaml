@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
     <Canvas>
-        <WrapPanel Height="77" Width="142" Canvas.Left="22" Canvas.Top="27" Background="#FFCFF3E4">
+        <WrapPanel Height="77" Width="142" Canvas.Left="39" Canvas.Top="48" Background="#FFCFF3E4">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </WrapPanel>
-        <Image Height="74" Canvas.Left="195" Canvas.Top="30" Width="147" Source="/Car.png"/>
+        <Image Height="74" Canvas.Left="219" Canvas.Top="51" Width="147" Source="/Car.png"/>
         <GroupBox Height="146" Header="Hobbies" Width="181" Canvas.Left="51" Canvas.Top="122" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Canvas>
                 <CheckBox x:Name="chkGardening" Content="Gardening" Canvas.Left="10" Canvas.Top="10"/>
@@ -45,5 +45,19 @@
             <ListBoxItem Content="Kia"/>
             <ListBoxItem Content="Nissan"/>
         </ListBox>
+        <Menu Height="30" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New"/>
+                <MenuItem Header="_Open"/>
+                <MenuItem Header="_Save"/>
+                <Separator/>
+                <MenuItem Header="E_xit" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cu_t"/>
+                <MenuItem Header="_Copy"/>
+                <MenuItem Header="_Paste"/>
+            </MenuItem>
+        </Menu>
     </Canvas>
 </Window>

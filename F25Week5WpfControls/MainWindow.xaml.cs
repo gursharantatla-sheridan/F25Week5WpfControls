@@ -77,5 +77,10 @@ namespace F25Week5WpfControls
                 lblOutput.Content = (lstCars.SelectedItem as ListBoxItem).Content;
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
