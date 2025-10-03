@@ -20,5 +20,21 @@ namespace F25Week5WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            if (chkGardening.IsChecked == true)
+                hobbies += chkGardening.Content + "\n";
+
+            if (chkTravelling.IsChecked == true)
+                hobbies += chkTravelling.Content + "\n";
+
+            if (chkSinging.IsChecked == true)
+                hobbies += chkSinging.Content + "\n";
+
+            lblOutput.Content = hobbies;
+        }
     }
 }
